@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Clone</title>
+    <link
+      rel="shortcut icon"
+      href="assets/image/ins_favicon.webp"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="progress-bar"></div>
+    <div id="notification_overlay" class="search_overlay">
+      <div class="search_wrapper">
+        <h1 class="search-title">Notification</h1>
+        <div class="search_input-main">
+          <div class="s_i-main-title">
+            <p class="recently-txt">Recently</p>
+            <p class="delete_all-txt">Delete all</p>
+          </div>
+          <div class="search_recently-wrapper">
+            <ul class="list_search-user list-suggested">
+              <li>
+                <div class="profile_box">
+                  <div class="profile-inf">
+                    <div class="profile-avt">
+                      <img src="assets/image/user25.jpg" alt="" />
+                    </div>
+                    <div class="profile-des">
+                      <p class="profile-des_id">
+                        _am_agle040
+                        <span class="notifi-txt"
+                          >has started following you</span
+                        >
+                      </p>
+
+                      <div class="profile-des_name">27th March</div>
+                    </div>
+                  </div>
+                  <div class="noti-btn-follow">
+                    <p class="follow-txt">Following</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="follow-option" class="pop_up_overlay">
+      <div class="follow_wrapper">
+        <div class="follow-img">
+          <img src="assets/image/user25.jpg" alt="" />
+        </div>
+        <p class="follow-opt">Unfollow</p>
+        <p id="cancel_fl-otp" class="follow-cancel">Cancel</p>
+      </div>
+    </div>
+    <div id="search_overlay" class="search_overlay">
+      <div class="search_wrapper">
+        <h1 class="search-title">Search</h1>
+        <div class="search_input-field">
+          <input
+            type="text"
+            name=""
+            id="input_search"
+            placeholder="Search..."
+          />
+          <label for="" class="lblSearch"></label>
+          <div id="delete_all-txt" class="icon-delete-txt">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+          <div class="icon-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="search_input-main">
+          <div class="s_i-main-title">
+            <p class="recently-txt">Recently</p>
+            <p class="delete_all-txt">Delete all</p>
+          </div>
+          <div class="search_recently-wrapper">
+            <ul class="list_search-user list-suggested">
+              <li>
+                <div class="profile_box">
+                  <div class="profile-inf">
+                    <div class="profile-avt">
+                      <img src="assets/image/user9.jpg" alt="" />
+                    </div>
+                    <div class="profile-des">
+                      <p class="profile-des_id">alice.veins</p>
+                      <div class="profile-des_name">Alice Marry</div>
+                    </div>
+                  </div>
+                  <div class="btn-dlt">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="profile_box">
+                  <div class="profile-inf">
+                    <div class="profile-avt">
+                      <img src="assets/image/user13.jpg" alt="" />
+                    </div>
+                    <div class="profile-des">
+                      <p class="profile-des_id">_merveenroute</p>
+                      <div class="profile-des_name">Merveen</div>
+                    </div>
+                  </div>
+                  <div class="btn-dlt">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="profile_box">
+                  <div class="profile-inf">
+                    <div class="profile-avt">
+                      <img src="assets/image/user14.jpg" alt="" />
+                    </div>
+                    <div class="profile-des">
+                      <p class="profile-des_id">Cattia.ttv</p>
+                      <div class="profile-des_name">Trịnh Thúy Vy</div>
+                    </div>
+                  </div>
+                  <div class="btn-dlt">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="post_detail" class="post_detail_overlay">
+      <div class="post_detail-wrapper">
+        <div class="p-d-img"><img src="assets/image/user6.jpg" alt="" /></div>
+        <div class="p-d-infor">
+          <div class="pdinf-heading">
+            <div class="pdinf-user">
+              <div class="pdinf-avt">
+                <img src="assets/image/user6.jpg" alt="" />
+              </div>
+              <p class="pdinf_name-user">je__ly06</p>
+            </div>
+            <div class="post_h-setting show_sp-detail">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <ul class="pdinf_list-cmt">
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+            <li class="pdinf-cmt_user">
+              <div class="pdinf-user">
+                <div class="pdinf-avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+                <div class="pdinf-user-cmt">
+                  <div class="pdinf_name-cmt">
+                    <p class="pdinf_name-user">je__ly06</p>
+                    <p class="text-cmt">She's so beautiful <3</p>
+                  </div>
+                  <div class="pdinf-time">
+                    <p class="pdinf-time-cmt">1 day</p>
+                    <p class="pdinf-reply">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="post_at-loving">
+                <i title="Like this cmt" class="fa-regular fa-heart"></i>
+              </div>
+            </li>
+          </ul>
+          <div class="frame-reacted">
+            <div class="post_active">
+              <div class="post_at-loving">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+              <div class="post_at-saving">
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <p class="fv-nums">9.202 likes</p>
+            <p class="time-up-post">27th April</p>
+            <div class="frame-cmt">
+              <div class="emoji">
+                <ion-icon name="happy-outline"></ion-icon>
+              </div>
+              <input type="text" name="" id="" placeholder="Comment..." />
+              <p class="btn-up-cmt">Post</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="setting_post" class="pop_up_overlay">
+      <div class="setting_post-wrapper">
+        <ul id="list-st_post" class="list-st_post">
+          <li>Report</li>
+          <li>Go to post</li>
+          <li>Share...</li>
+          <li>Copy link</li>
+          <li>Embed</li>
+          <li>About this account</li>
+          <li id="cancel_setting-post">Cancel</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mess-box_overlay">
+      <div id="mess-box" class="mess-box">
+        <div id="search_mess-box" class="search_mess-box">
+          <input type="text" name="" id="" placeholder="Search mess..." />
+          <ion-icon name="search-outline"></ion-icon>
+          <label class="lbl_mess-box" for=""></label>
+        </div>
+        <div class="mess-box_header">
+          <p>Messenger</p>
+          <div id="close-mess_box" class="close-icon">
+            <ion-icon
+              style="transform: rotate(-45deg)"
+              name="code-outline"
+            ></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="mess-box_main">
+          <ul class="list_user">
+            <li class="user-item mess-activing has_story">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user1.webp" alt="" />
+                </div>
+              </div>
+
+              <div class="user-item_des">
+                <p class="user_des-name">Ngoc Phuong</p>
+                <p class="user_des-stt">online</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Iwen Nguyen</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user3.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">阮氏庄</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user4.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Nguyen Ngoc</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Tran Quynh</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user6.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Hanh Myy</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user7.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Nga Ivyy</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+            <li class="user-item">
+              <div class="user-item_avt-fr">
+                <div class="user-item_avt">
+                  <img src="assets/image/user8.jpg" alt="" />
+                </div>
+              </div>
+              <div class="user-item_des">
+                <p class="user_des-name">Truc Quynh</p>
+                <p class="user_des-stt">Active 5 minutes ago</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="mess-fixed_btn" class="mess-fixed">
+      <div class="mess-fixed_txt">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <span>Tin nhắn</span>
+      </div>
+
+      <ul class="mess_current">
+        <li class="mess_current-item">
+          <div class="label_user">Ngoc Phuong</div>
+          <div class="mess_current-avt">
+            <img src="assets/image/user1.webp" alt="" />
+          </div>
+        </li>
+        <li class="mess_current-item">
+          <div class="label_user">My Hanhh</div>
+          <div class="mess_current-avt">
+            <img src="assets/image/user2.jpg" alt="" />
+          </div>
+        </li>
+        <li class="mess_current-item">
+          <div class="label_user">Tram Yluu</div>
+          <div class="mess_current-avt">
+            <img src="assets/image/user3.jpg" alt="" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="home.html">
+          <p id="text-logo" class="text-logo">Instagram</p>
+          <div id="image-logo" class="image_logo">
+            <img src="assets/image/ins_favicon.webp" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="category">
+        <ul class="list_category">
+          <a id="item-link" class="item-link" href="home.html">
+            <li class="category-item">
+              <ion-icon name="home-outline"></ion-icon>
+              <span>Home</span>
+            </li>
+          </a>
+          <div id="item-link-search" class="item-link" href="#">
+            <li class="category-item">
+              <ion-icon name="search-outline"></ion-icon>
+              <span>Search</span>
+            </li>
+          </div>
+          <a id="item-link" class="item-link" href="explore.html">
+            <li class="category-item">
+              <ion-icon name="compass-outline"></ion-icon>
+              <span>Explore</span>
+            </li>
+          </a>
+          <a id="item-link" class="item-link" href="#">
+            <li class="category-item">
+              <ion-icon name="play-circle-outline"></ion-icon>
+              <span>Reels</span>
+            </li>
+          </a>
+          <a
+            id="item-link"
+            class="item-link"
+            href="inbox.html?action=change-nav"
+          >
+            <li class="category-item">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              <span>Messenger</span>
+            </li>
+          </a>
+          <div class="item-link item-link-notifi" href="#">
+            <li class="category-item">
+              <ion-icon class="bell" name="heart-outline"></ion-icon>
+              <span>Notification</span>
+            </li>
+          </div>
+          <a id="item-link" class="item-link" href="#">
+            <li class="category-item">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Create</span>
+            </li>
+          </a>
+          <a id="item-link" class="item-link" href="profile.html">
+            <li class="category-item active-nav">
+              <div class="profile-icon">
+                <img src="assets/image/avatar.jpg" alt="" />
+              </div>
+              <span>Profile</span>
+            </li>
+          </a>
+          <a id="item-link" class="item-link" href="#">
+            <li class="category-item">
+              <ion-icon name="logo-ionic"></ion-icon>
+              <span>Meta AI</span>
+            </li>
+          </a>
+          <a id="item-link" class="item-link" href="#">
+            <li class="category-item">
+              <ion-icon name="logo-pinterest"></ion-icon>
+              <span>Pinterest</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="main_profile">
+        <div class="main_profile-heading">
+          <div class="mp-heading_avt">
+            <div class="mess_user-str">
+              <div class="mess_user-img">
+                <img src="assets/image/user6.jpg" alt="" />
+              </div>
+              <div class="user_str-frame">
+                <p class="str-txt">Note...</p>
+              </div>
+            </div>
+          </div>
+          <div class="mp-heading_wrapper">
+            <div class="infor_profile">
+              <p class="infor_profile-name">_n.pis04</p>
+              <div class="btn-edit_profile">Edit Profile</div>
+              <div class="btn-see_archive">See Archive</div>
+              <div class="btn-setting"><i class="fa-solid fa-gear"></i></div>
+            </div>
+            <div class="des_profile">
+              <p class="post-txt"><strong>0</strong> post</p>
+              <p class="followers-txt"><strong>2.356</strong> followers</p>
+              <p class="following-txt">Following <strong>1</strong> user</p>
+            </div>
+            <p class="name_prf">Bui Huu Nam</p>
+            <ul class="list_link-ig">
+              <a href="#">
+                <li>
+                  <i class="fa-brands fa-threads"></i> <span>_n.pis04</span>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <i class="fa-brands fa-facebook"></i> <span>Bui Huu Nam</span>
+                </li>
+              </a>
+            </ul>
+            <p class="stt-text">Positive peo</p>
+            <ul class="list_pin">
+              <a href="#">
+                <li class="pin-item">
+                  <i class="fa-solid fa-link"></i>
+                  <span>locket.camera/links/5sa4YxoM7aWjAqic7</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <ul class="list_story-profile">
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user12.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user13.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user14.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user15.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user16.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item">
+            <div class="str-it_img">
+              <img src="assets/image/user18.jpg" alt="" />
+            </div>
+            <p class="str-it_title">So Cute <3!</p>
+          </li>
+          <li class="story-profile-item str-prf-it_create">
+            <div class="str-it_img str-it_icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <p class="str-it_title">Create new</p>
+          </li>
+        </ul>
+        <div class="swap-tble-list">
+          <div class="stl-post stl-post-active">
+            <ion-icon name="grid-outline"></ion-icon> <span>Post</span>
+          </div>
+        </div>
+        <div class="post_profile-wrapper">
+          <div id="post_wrapper" class="explore_frame">
+            <div class="explore-item-uploadImg upLoadPost">
+              <input
+                type="file"
+                name=""
+                id="imgInputPost"
+                accept="image/*"
+                style="display: none"
+              />
+              <div class="upload_image-btn">
+                <ion-icon name="images-outline"></ion-icon>
+              </div>
+              <div class="upload_image-title">Upload Post</div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user12.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user14.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user9.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user10.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user15.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="explore-item">
+              <img src="assets/image/user18.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user19.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user24.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user8.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user13.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="explore-item">
+              <img src="assets/image/user17.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user20.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user25.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user23.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="explore-item">
+              <img src="assets/image/user21.jpg" alt="" />
+              <div class="explore-item_imgs">
+                <ion-icon name="copy"></ion-icon>
+              </div>
+              <div class="explore-item_overlay">
+                <div class="exio-react">
+                  <div class="nums_react">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>310K</span>
+                  </div>
+                  <div class="nums_react">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>102</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main_profile-footer">
+          <ul class="list_footer">
+            <a href="https://about.meta.com/" target="_blank">
+              <li>Meta</li>
+            </a>
+            <a href="https://about.instagram.com/" target="_blank">
+              <li>Introduce</li>
+            </a>
+            <a href="https://help.instagram.com/" target="_blank">
+              <li>Help</li>
+            </a>
+            <a href="https://about.instagram.com/blog/" target="_blank">
+              <li>Blog</li>
+            </a>
+            <a
+              href="https://developers.facebook.com/docs/instagram"
+              target="_blank"
+            >
+              <li>API</li>
+            </a>
+            <a
+              href="https://about.instagram.com/about-us/careers"
+              target="_blank"
+            >
+              <li>Careers</li>
+            </a>
+            <a href="https://www.instagram.com/legal/privacy/" target="_blank">
+              <li>Privacy</li>
+            </a>
+            <a href="https://www.instagram.com/legal/terms/" target="_blank">
+              <li>Terms</li>
+            </a>
+            <a href="https://www.threads.com/" target="_blank">
+              <li>Threads</li>
+            </a>
+            <a
+              href="https://www.instagram.com/explore/locations/"
+              target="_blank"
+            >
+              <li>Location</li>
+            </a>
+            <a
+              href="https://www.facebook.com/help/instagram/261704639352628"
+              target="_blank"
+            >
+              <li>Upload Contact & Non-User Information</li>
+            </a>
+            <a
+              href="https://www.instagram.com/language/preferences/"
+              target="_blank"
+            >
+              <li>Language</li>
+            </a>
+            <a
+              href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer"
+              target="_blank"
+            >
+              <li>Meta verified</li>
+            </a>
+          </ul>
+          <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> 2025 INSTAGRAM FROM META
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
